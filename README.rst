@@ -1,6 +1,7 @@
 To run:
 
+
 ```
-poetry install
-poetry run python script.py
+$ poetry install
+$ MONGODBHOST="<host>" poetry run python script_all.py
 ```
