@@ -33,7 +33,7 @@ def read_mongodb():
                         "groupType": "ATLAS",
                         "hostInfo.typeName": "REPLICA_PRIMARY",
                         "last_ping_date": {
-                            "$gte": datetime(2021, 4, 21, 0, 0, 0, tzinfo=pytz.utc)
+                            "$gte": datetime(2021, 4, 28, 0, 0, 0, tzinfo=pytz.utc)
                         },
                         "lastPingData.serverStatus.logicalSessionRecordCache.sessionCatalogSize": {
                             "$ne": None
