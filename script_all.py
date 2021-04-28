@@ -24,7 +24,7 @@ def read_mongodb():
     and collect information about the collection.
     """
     tc_info = dict()
-    with open("output.csv", "w+") as f:
+    with open("output_all.csv", "w+") as f:
         cursor = COLLECTION.aggregate(
             [
                 {
