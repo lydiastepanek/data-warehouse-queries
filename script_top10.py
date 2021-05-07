@@ -35,21 +35,18 @@ def read_mongodb():
                         "last_ping_date": {
                             "$gte": datetime(2021, 2, 28, 0, 0, 0, tzinfo=pytz.utc)
                         },
-                        "lastPingData.serverStatus.logicalSessionRecordCache.sessionCatalogSize": {
-                            "$ne": None
-                        },
-                        "groupId": {
+                        "hostInfo.clusterId": {
                             "$in": [
-                                "59d3bb384e65815603770555",
-                                "5de53858553855d6eb3f9c8c",
-                                "5de53858553855d6eb3f9c8c",
-                                "57fef6a03b34b9247381e266",
-                                "5bbf9328ff7a259dccf23ca6",
-                                "5f5ba0ca92cad45747fecaf4",
-                                "5d739a4ecf09a28b6f69b570",
-                                "5e19a6a2cf09a25b90180503",
-                                "5eae6931e312e0471bdd6f7f",
-                                "5eadd9920b8b5a2d311ace7c",
+                                "5cb5f303d5ec137cbe411bb9",
+                                "57fef8d49701997f939b8112",
+                                "5adde620df9db15acf42db3b",
+                                "5daae1f2a6f239dc245e830b",
+                                "5fd0af713d1d80700ead364b",
+                                "5e17a3f55538551de8b5d6e3",
+                                "5c92d9b9c56c988683fde64e",
+                                "5d56d0facf09a2f486e773c6",
+                                "5f5ba4cb82c27d423ede543d",
+                                "5d5adb8e04e3af3d36dbb025",
                             ]
                         },
                     }
